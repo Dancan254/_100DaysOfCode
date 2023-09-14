@@ -11,7 +11,7 @@ public class Main {
        // boolean exit = false;
         while (true) {
             showOptions();
-            System.out.print("Enter choice of operation (number): ");
+            System.out.print("Enter choice (number): ");
             int choice = sn.nextInt();
             sn.nextLine();
             switch(choice){
