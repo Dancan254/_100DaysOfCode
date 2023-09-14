@@ -28,11 +28,14 @@ public class SimpleCalculator {
     public double Division(){
         return (num1 == 0 ? -1 : num2 / num1);
     }
-    public void exit(){
-        System.out.println("Exiting");
-        System.exit(0);
+
+    public double SquareRoot(){
+        return Math.sqrt(num1);
     }
 
+    public double Exponential(){
+        return Math.pow(num1, num2);
+    }
     @Override
     public String toString() {
         return "SimpleCalculator{" +

@@ -11,13 +11,14 @@ public class Main {
             printOptions();
             System.out.println("Enter option (number): ");
             int choice = sn.nextInt();
-            if (choice < 1 || choice > 5) {
-                System.out.println("Invalid choice. Please enter a valid option (1-5).");
-                continue; // Skip the rest of the loop and start over.
-            }
-            if (choice == 5) {
+            if (choice == 7) {
                 System.out.println("Exiting>>>>>>");
                 System.exit(0);
+            }
+
+            if (choice < 1 || choice > 7) {
+                System.out.println("Invalid choice. Please enter a valid option (1-5).");
+                continue; // Skip the rest of the loop and start over.
             }
             System.out.println("Enter num1: ");
             int num1 = sn.nextInt();
@@ -37,6 +38,12 @@ public class Main {
                 case 4 -> {
                     System.out.println("Quotient is: " + calculator.Division());
                 }
+                case 5 -> {
+                    System.out.println("The Sqrt of num1 is: " + calculator.SquareRoot());
+                }
+                case 6 -> {
+                    System.out.println("The exponential of num1 to num2 is: " + calculator.Exponential());
+                }
                 default -> System.out.println("Operation does not exist");
             }
             count++;
@@ -49,7 +56,9 @@ public class Main {
                 2. Subtraction
                 3. Multiplication
                 4. Division
-                5. Exit
+                5. SquareRoot
+                6. Exponential
+                7. Exit
                 """);
         //System.out.println("Enter the operation of choice:");
     }
