@@ -1,4 +1,4 @@
-package Projects.Phase1;
+package Projects.Phase1.Calculator;
 
 public class SimpleCalculator {
     private double num1;

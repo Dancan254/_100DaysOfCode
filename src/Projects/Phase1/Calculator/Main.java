@@ -1,4 +1,4 @@
-package Projects.Phase1;
+package Projects.Phase1.Calculator;
 
 import java.util.Scanner;
 
