@@ -27,7 +27,6 @@ public class EventPlanner {
     public void removeEvent(String eventName){
         if (!events.contains(eventName)){
             System.out.println("Event does not exist");
-            return;
         }
         else{
             events.remove(eventName);
