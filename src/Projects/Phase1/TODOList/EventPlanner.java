@@ -1,5 +1,7 @@
 package Projects.Phase1.TODOList;
 
+import org.w3c.dom.events.Event;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -40,6 +42,7 @@ public class EventPlanner {
             System.out.println("No activity present");
         }
         for (String event: events){
+            //System.out.println("Listing event: ");
             System.out.println(event);
         }
     }

@@ -11,23 +11,12 @@ public class Main {
        // boolean exit = false;
         while (true) {
             showOptions();
-            System.out.print("Enter choice (number): ");
-            int choice = sn.nextInt();
-            sn.nextLine();
+            int choice = getUserInput(sn);
+            //sn.nextLine();
             switch(choice){
-                   case 1 ->{
-                       System.out.println("Enter activity:");
-                       String activity = sn.nextLine();
-                       planner.addEvent(activity);
-                   }
-                   case 2-> {
-                       System.out.println("Enter activity to erase:");
-                       String activity = sn.nextLine();
-                       planner.removeEvent(activity);
-                   }
-                   case 3 -> {
-                       planner.listEvents();
-                   }
+                   case 1 -> addEvent(sn, planner);
+                   case 2-> removeEvent(sn, planner);
+                   case 3 -> listEvents(planner);
                    case 4 -> {
                        System.out.println("Exiting>>>>");
                        System.exit(0);
@@ -40,7 +29,11 @@ public class Main {
         }
 
     }
+    public static int getUserInput(Scanner scanner){
 
+        System.out.print("Enter choice of operation (number): ");
+        return scanner.nextInt();
+    }
     public static void showOptions(){
         System.out.println("""
                 1. Add activity
@@ -48,6 +41,26 @@ public class Main {
                 3. View Present Activities
                 4. Exit
                 """);
+    }
+
+    public static void addEvent(Scanner scanner, EventPlanner planner){
+
+        System.out.println("Enter activity: ");
+        scanner.nextLine();
+        String activity = scanner.nextLine();
+        planner.addEvent(activity);
+    }
+
+    public static void removeEvent(Scanner scanner, EventPlanner planner){
+        System.out.println("Enter activity to erase: ");
+        scanner.nextLine();
+        String activity = scanner.nextLine();
+        planner.removeEvent(activity);
+    }
+
+    public static void listEvents(EventPlanner planner){
+        System.out.println("Viewing present activities: ");
+        planner.listEvents();
     }
 
 }
