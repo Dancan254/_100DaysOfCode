@@ -6,13 +6,14 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner sn = new Scanner(System.in);
-        int count = 0;
-        do {
+        EventPlanner planner = new EventPlanner();
+//        int count = 0;
+       // boolean exit = false;
+        while (true) {
             showOptions();
             System.out.print("Enter choice of operation (number): ");
             int choice = sn.nextInt();
             sn.nextLine();
-            EventPlanner planner = new EventPlanner();
             switch(choice){
                    case 1 ->{
                        System.out.println("Enter activity:");
@@ -36,8 +37,7 @@ public class Main {
                    }
             }
 
-            count++;
-        }while(count <= 5);
+        }
 
     }
 
