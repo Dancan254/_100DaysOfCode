@@ -43,8 +43,6 @@ public class Main {
         // Close the scanner
         scanner.close();
     }
-
-    //using ArrayList
     public static void Quiz(Scanner scanner) {
 
         System.out.println("Welcome to Quiz game");
