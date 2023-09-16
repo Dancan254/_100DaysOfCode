@@ -52,36 +52,58 @@ public class Main {
         System.out.println("Welcome to Quiz game");
 
         String[] questions = {
-                "What is Java?\nA) An operating system\n" +
-                        "B) A programming language\n" +
-                        "C) A type of coffee",
-                "Which keyword is used to define a constant in Java?\nA) const\n" +
-                        "B) final\n" +
-                        "C) static",
-                "What is the entry point of a Java program?\nA) main()\n" +
-                        "B) start()\n" +
-                        "C) execute()",
-                "Which data type is used to store whole numbers in Java?\nA) double\n" +
-                        "B) int\n" +
-                        "C) char",
-                "How do you declare a variable in Java to hold a floating-point number?\nA) float\n" +
-                        "B) real\n" +
-                        "C) double",
-                "What is the purpose of the 'if' statement in Java?\nA) To declare a variable\n" +
-                        "B) To define a class\n" +
-                        "C) To make decisions in code",
-                "Which Java keyword is used to create a subclass of a class?\nA) super\n" +
-                        "B) extends\n" +
-                        "C) subclass",
-                "What is the default value of a boolean variable in Java?\nA) true\n" +
-                        "B) false\n" +
-                        "C) null",
-                "Which loop in Java is used to iterate over a collection of items like an array?\nA) while\n" +
-                        "B) for-each\n" +
-                        "C) repeat\n",
-                "How do you prevent a method or variable from being accessed outside of its class?\nA) Make it public\n" +
-                        "B) Make it private\n" +
-                        "C) Make it protected\n"
+                """
+                What is Java?
+                A) An operating system
+                B) A programming language
+                C) A type of coffee""",
+                                """
+                Which keyword is used to define a constant in Java?
+                A) const
+                B) final
+                C) static""",
+                                """
+                What is the entry point of a Java program?
+                A) main()
+                B) start()
+                C) execute()""",
+                                """
+                Which data type is used to store whole numbers in Java?
+                A) double
+                B) int
+                C) char""",
+                                """
+                How do you declare a variable in Java to hold a floating-point number?
+                A) float
+                B) real
+                C) double""",
+                                """
+                What is the purpose of the 'if' statement in Java?
+                A) To declare a variable
+                B) To define a class
+                C) To make decisions in code""",
+                                """
+                Which Java keyword is used to create a subclass of a class?
+                A) super
+                B) extends
+                C) subclass""",
+                                """
+                What is the default value of a boolean variable in Java?
+                A) true
+                B) false
+                C) null""",
+                                """
+                Which loop in Java is used to iterate over a collection of items like an array?
+                A) while
+                B) for-each
+                C) repeat
+                """,
+                                """
+                How do you prevent a method or variable from being accessed outside of its class?
+                A) Make it public
+                B) Make it private
+                C) Make it protected
+                """
         };
 
         String[] answers = {
