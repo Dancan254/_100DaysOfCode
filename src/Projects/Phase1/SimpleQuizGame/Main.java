@@ -52,16 +52,36 @@ public class Main {
         System.out.println("Welcome to Quiz game");
 
         String[] questions = {
-                "What is Java?",
-                "Which keyword is used to define a constant in Java?",
-                "What is the entry point of a Java program?",
-                "Which data type is used to store whole numbers in Java?",
-                "How do you declare a variable in Java to hold a floating-point number?",
-                "What is the purpose of the 'if' statement in Java?",
-                "Which Java keyword is used to create a subclass of a class?",
-                "What is the default value of a boolean variable in Java?",
-                "Which loop in Java is used to iterate over a collection of items like an array?",
-                "How do you prevent a method or variable from being accessed outside of its class?"
+                "What is Java?\nA) An operating system\n" +
+                        "B) A programming language\n" +
+                        "C) A type of coffee",
+                "Which keyword is used to define a constant in Java?\nA) const\n" +
+                        "B) final\n" +
+                        "C) static",
+                "What is the entry point of a Java program?\nA) main()\n" +
+                        "B) start()\n" +
+                        "C) execute()",
+                "Which data type is used to store whole numbers in Java?\nA) double\n" +
+                        "B) int\n" +
+                        "C) char",
+                "How do you declare a variable in Java to hold a floating-point number?\nA) float\n" +
+                        "B) real\n" +
+                        "C) double",
+                "What is the purpose of the 'if' statement in Java?\nA) To declare a variable\n" +
+                        "B) To define a class\n" +
+                        "C) To make decisions in code",
+                "Which Java keyword is used to create a subclass of a class?\nA) super\n" +
+                        "B) extends\n" +
+                        "C) subclass",
+                "What is the default value of a boolean variable in Java?\nA) true\n" +
+                        "B) false\n" +
+                        "C) null",
+                "Which loop in Java is used to iterate over a collection of items like an array?\nA) while\n" +
+                        "B) for-each\n" +
+                        "C) repeat\n",
+                "How do you prevent a method or variable from being accessed outside of its class?\nA) Make it public\n" +
+                        "B) Make it private\n" +
+                        "C) Make it protected\n"
         };
 
         String[] answers = {
@@ -81,12 +101,11 @@ public class Main {
         int score = 0;
         for (int i = 0; i < questions.length; i++) {
             System.out.println("question" + (i + 1) + ": " + questions[i]);
-            System.out.println("A) An operating system");
-            System.out.println(answers[i]);
+            //System.out.println(answers[i]);
 
-            char userAnswer = scanner.next().charAt(0);
+            char userAnswer = scanner.next().toLowerCase().charAt(0);
 
-            if (userAnswer == answers[i].charAt(0)) {
+            if (userAnswer == answers[i].toLowerCase().charAt(0)) {
                 System.out.println("Correct!\n");
                 score++;
             } else {
