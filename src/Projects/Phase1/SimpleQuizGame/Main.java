@@ -44,9 +44,7 @@ public class Main {
         scanner.close();
     }
     public static void Quiz(Scanner scanner) {
-
         System.out.println("Welcome to Quiz game");
-
         String[] questions = {
                 """
                 What is Java?
@@ -101,7 +99,6 @@ public class Main {
                 C) Make it protected
                 """
         };
-
         String[] answers = {
                 "B) A programming language",
                 "B) final",
@@ -114,8 +111,6 @@ public class Main {
                 "B) for-each",
                 "B) Make it private"
         };
-
-
         int score = 0;
         for (int i = 0; i < questions.length; i++) {
             System.out.println("question" + (i + 1) + ": " + questions[i]);
@@ -130,10 +125,8 @@ public class Main {
                 System.out.println("Incorrect. The correct answer is " + answers[i] + ".\n");
             }
         }
-
         // Display the user's final score
         System.out.println("Quiz completed! Your score: " + score + "/" + questions.length);
-
         // Close the scanner
         scanner.close();
     }
