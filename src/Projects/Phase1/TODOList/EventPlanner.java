@@ -22,7 +22,7 @@ public class EventPlanner {
         }
         else{
             events.add(eventName);
-            System.out.println("Event successfully added");
+            System.out.println( eventName + " Event successfully added");
         }
     }
 
@@ -32,7 +32,7 @@ public class EventPlanner {
         }
         else{
             events.remove(eventName);
-            System.out.println("Event removed");
+            System.out.println(eventName + " Event removed");
         }
     }
 
