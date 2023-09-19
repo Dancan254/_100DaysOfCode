@@ -31,7 +31,7 @@ public class Main {
                 System.out.println("found 9");
                 long endTime = System.currentTimeMillis();
                 long duration = endTime - startTime;
-                System.out.println("Total time taken for search = " + (duration/60 ) + "secs");
+                System.out.println("Total time taken for search = " + (duration ) + "secs");
                 break;
             }
             //System.out.print(number + " ");
@@ -53,7 +53,7 @@ public class Main {
                 System.out.println("Found " + target + " at index " + mid);
                 long endTime = System.currentTimeMillis();
                 long duration = endTime - startTime;
-                System.out.println("Total time taken for search = " + (duration/60 ) + "secs");
+                System.out.println("Total time taken for search = " + (duration) + "secs");
                 break;
             } else if (arr[mid] < target) {
                 //shift indices to the right
