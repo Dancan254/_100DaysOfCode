@@ -19,26 +19,23 @@ public class CurrencyConverter {
 
         // Determine exchange rate based on user choice
         switch (choice) {
-            case 1:
+            case 1 ->
                 // USD to EUR exchange rate
-                exchangeRate = 0.85;
-                break;
-            case 2:
+                    exchangeRate = 0.85;
+            case 2 ->
                 // EUR to USD exchange rate
-                exchangeRate = 1.18;
-                break;
-            case 3:
+                    exchangeRate = 1.18;
+            case 3 ->
                 // USD to KES exchange rate
-                exchangeRate = 110.0;
-                break;
-            case 4:
+                    exchangeRate = 110.0;
+            case 4 ->
                 // KES to USD exchange rate
-                exchangeRate = 0.0091;
-                break;
-            default:
+                    exchangeRate = 0.0091;
+            default -> {
                 System.out.println("Invalid choice. Please enter 1, 2, 3, or 4.");
                 input.close();
                 return;
+            }
         }
 
         // Get the amount to convert
