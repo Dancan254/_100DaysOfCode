@@ -1,4 +1,5 @@
-**100 Days of Code Challenge******
+**100 Days of Code Challenge**
+
 Welcome to my "100 Days of Code" challenge repository! Here, I'm documenting my coding journey as I commit to coding every day for the next 100 days. This challenge is all about personal growth, skill enhancement, and building a strong coding foundation.
 
 **Motivation**
