@@ -21,7 +21,7 @@ public class Main {
         }
 
         //sorting
-        Arrays.sort(numbers);
+       // Arrays.sort(numbers);
 
         //searching without binary
 
@@ -42,6 +42,7 @@ public class Main {
     private static void binarySearch(int[] arr, int target){
 
         System.out.println("Ensure that your array is sorted");
+        Arrays.sort(arr);
         int start = 0;
         int end = arr.length - 1;
 
