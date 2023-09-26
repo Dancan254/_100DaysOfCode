@@ -21,10 +21,9 @@ public class Main {
         }
 
         //sorting
-       // Arrays.sort(numbers);
+        Arrays.sort(numbers);
 
         //searching without binary
-
         for (int number : numbers){
             long startTime = System.currentTimeMillis();
             if (number == 9){
@@ -40,15 +39,12 @@ public class Main {
     }
     //implementing binary search
     private static void binarySearch(int[] arr, int target){
-
         System.out.println("Ensure that your array is sorted");
         Arrays.sort(arr);
         int start = 0;
         int end = arr.length - 1;
-
         long startTime = System.currentTimeMillis();
         while (start <= end){
-
             int mid = (end - start) / 2 + start;
             if (arr[mid] == target){
                 System.out.println("Found " + target + " at index " + mid);
