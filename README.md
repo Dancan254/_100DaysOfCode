@@ -8,7 +8,7 @@ The 100 Days of Code challenge is a commitment to code consistently for 100 days
 Motivation
 I've embarked on this challenge to:
 
-Hone My Skills: Enhance my coding skills in various languages and frameworks.
+Hone My Skills: Enhance my coding skills in java and Spring boot .
 Explore New Horizons: Learn new technologies and tools.
 Build Projects: Create exciting and practical projects.
 Share Knowledge: Document my progress and share insights with the community.
